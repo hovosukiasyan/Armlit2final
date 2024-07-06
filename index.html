@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Հայ գրողների ժամանակացույց</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Հայ գրողները դարերի ընթացքում</h1>
+    </header>
+    <nav>
+        <input type="text" id="search" placeholder="Փնտրել գրողներին...">
+        <select id="century-filter">
+            <option value="all">Բոլոր դարերը</option>
+            <!-- Century options will be added dynamically -->
+        </select>
+    </nav>
+    <main>
+        <section id="timeline"></section>
+        <div id="details">
+            <div id="writer-info"></div>
+            <div id="famous-works"></div>
+            <div id="works-link">
+                <a id="works-link-button" class="button" href="#" target="_blank">Read Works</a>
+            </div>
+            <div id="map"></div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Armenian Literature Project</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
