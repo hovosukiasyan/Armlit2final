@@ -142,7 +142,6 @@ main {
     background-color: var(--secondary-color);
 }
 
-
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -157,4 +156,71 @@ footer {
 
 .fade-in {
     animation: fadeIn 0.5s ease-out;
+}
+
+/* Mobile-Specific Styling */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search, #century-filter {
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+    #details {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+
+    #writer-info, #famous-works, #map {
+        padding: 1rem;
+    }
+
+    #map {
+        height: 200px;
+    }
+
+    .timeline-item {
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .timeline-item::before {
+        left: -5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .timeline-content h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    #works-link-button {
+        padding: 0.75rem 1.5rem;
+    }
+
+    .timeline-content h2 {
+        font-size: 1rem;
+    }
 }
